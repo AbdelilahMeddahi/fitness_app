@@ -47,5 +47,5 @@ var topWorkouts = [
       workoutCalories: "350 Cal",
       workoutDuration: "40 min",
       workoutDescription: "Full Body Workout",
-      workoutImage: "assets/yoga3.png"),
+      workoutImage: "assets/yoga6.png"),
 ];

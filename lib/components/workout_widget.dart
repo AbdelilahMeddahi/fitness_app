@@ -58,7 +58,7 @@ class WorkoutWidget extends StatelessWidget {
                 ),
                 Text(
                   workoutDescription,
-                  style: TextStyle(fontSize: 15, color: Colors.grey[600],fontWeight: FontWeight.w400,),
+                  style: TextStyle(fontSize: 15, color: Colors.grey,fontWeight: FontWeight.w400,),
                 ),
                 SizedBox(
                   height: (MediaQuery.of(context).size.height-56)*0.03447,

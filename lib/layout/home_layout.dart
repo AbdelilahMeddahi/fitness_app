@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 import 'dart:developer';
 
-
 class HomeLayout extends StatefulWidget {
   const HomeLayout({Key? key}) : super(key: key);
 
@@ -31,29 +30,38 @@ class _HomeLayoutState extends State<HomeLayout> {
             splashColor: Colors.transparent,
             highlightColor: Colors.transparent,
           ),
-          child: BottomNavigationBar(
-            selectedItemColor: pinkColor,
-            unselectedItemColor: Colors.black,
-            iconSize: MediaQuery.of(context).size.width * 0.075,
-            currentIndex: currentIndex,
-            showSelectedLabels: false,
-            showUnselectedLabels: false,
-            type: BottomNavigationBarType.fixed,
-            elevation: 0,
-            onTap: (index) {
-              setState(
-                () {
-                  currentIndex = index;
-                },
-              );
-            },
-            items: [
-              BottomNavigationBarItem(
-                  icon: Icon(Ionicons.home_outline), label: "home"),
-              BottomNavigationBarItem(
-                  icon: Icon(Ionicons.stats_chart_outline), label: "analytics"),
-              BottomNavigationBarItem(icon: Icon(Icons.add), label: "profile"),
-            ],
+          child: SizedBox(
+            height: 66,
+            child: BottomNavigationBar(
+              selectedItemColor: pinkColor,
+              unselectedItemColor: Colors.black,
+              iconSize: MediaQuery.of(context).size.width * 0.075,
+              currentIndex: currentIndex,
+              showSelectedLabels: false,
+              showUnselectedLabels: false,
+              type: BottomNavigationBarType.fixed,
+              elevation: 18,
+              onTap: (index) {
+                setState(
+                  () {
+                    currentIndex = index;
+                  },
+                );
+              },
+              items: const [
+                BottomNavigationBarItem(
+                    icon: Icon(Ionicons.home_outline), label: "home"),
+                BottomNavigationBarItem(
+                    icon: Icon(Ionicons.stats_chart_outline), label: "analytics"),
+                BottomNavigationBarItem(
+                  icon: CircleAvatar(
+                    radius: 18,
+                    backgroundImage: AssetImage("assets/profile_pic.jpg",),
+                  ),
+                  label: "profie",
+                ),
+              ],
+            ),
           ),
         ));
   }

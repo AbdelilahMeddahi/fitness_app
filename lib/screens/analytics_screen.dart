@@ -20,11 +20,11 @@ class AnalyticsScreen extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
 
-                const Icon(Ionicons.chevron_back_outline),
+                Image.asset("assets/icons/back.png",height: 18),
                 const Text(
                   "Analytics",
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 22,
                     fontWeight: FontWeight.w500,
                     letterSpacing: 0,
                   ),
@@ -38,20 +38,20 @@ class AnalyticsScreen extends StatelessWidget {
             const Text(
               "Today",
               style: TextStyle(
-                  color: pinkColor, fontSize: 23, fontWeight: FontWeight.w600),
+                  color: pinkColor, fontSize: 24, fontWeight: FontWeight.w500),
             ),
             SizedBox(
-              height: (MediaQuery.of(context).size.height - 56) * 0.005,
+              height: (MediaQuery.of(context).size.height - 56) * 0.007,
             ),
             const Text(
               "Mon 26 Apr",
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 26,
+                  fontSize: 28,
                   fontWeight: FontWeight.w600),
             ),
              SizedBox(
-              height: MediaQuery.of(context).size.width*30/MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width*23/MediaQuery.of(context).size.width,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -162,7 +162,7 @@ class AnalyticsScreen extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: MediaQuery.of(context).size.width*26/MediaQuery.of(context).size.width,
+              height: MediaQuery.of(context).size.width*30/MediaQuery.of(context).size.width,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,

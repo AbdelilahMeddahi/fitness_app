@@ -71,7 +71,7 @@ class HomeScreen extends StatelessWidget {
                 width: 10,
               ),
               Image.asset(
-                "assets/icons/girl-power.png",
+                "assets/icons/arm.png",
                 width: 30,
               ),
             ]),
