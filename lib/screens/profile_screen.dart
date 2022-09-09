@@ -1,3 +1,4 @@
+import 'package:fitness_app/utils/constants.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
@@ -5,6 +6,12 @@ class ProfileScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return SafeArea(
+      child: Container(
+        height: 820,
+        width: 392.7,
+        color: pinkColor,
+      ),
+    );
   }
 }
